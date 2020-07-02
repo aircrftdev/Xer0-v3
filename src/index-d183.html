@@ -17,14 +17,14 @@
   <!-- NAVIGATION
     ================================================== -->
   @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
-  @@if (sidebarSize == '' || demoMode) {
+  @@if (sidebarSize == 'base' || demoMode) {
   @@include("partials/sidebar.html", {
   "category": "pages",
   "subcategory": "project",
   "page": "index.html"
   })
   }
-  @@if (sidebarSize == 'base' || demoMode) {
+  @@if (sidebarSize == 'small' || demoMode) {
   @@include("partials/sidebar-sm.html", {
   "category": "pages",
   "subcategory": "project",
