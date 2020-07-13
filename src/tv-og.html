@@ -3,7 +3,7 @@
 
 <head>
   @@include("partials/head.html", {
-  "title": "AIRCRFT"
+  "title": "AIRCRFT FounderTV"
   })
 </head>
 
@@ -17,26 +17,26 @@
   <!-- NAVIGATION
     ================================================== -->
   @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
-  @@if (sidebarSize == '' || demoMode) {
+  @@if (sidebarSize == 'base' || demoMode) {
   @@include("partials/sidebar.html", {
   "category": "pages",
-  "subcategory": "project",
-  "page": "index.html"
+  "subcategory": "",
+  "page": "tv.html"
   })
   }
-  @@if (sidebarSize == 'base' || demoMode) {
+  @@if (sidebarSize == 'small' || demoMode) {
   @@include("partials/sidebar-sm.html", {
   "category": "pages",
-  "subcategory": "project",
-  "page": "index.html"
+  "subcategory": "",
+  "page": "tv.html"
   })
   }
   }
   @@if (navPosition == 'topnav' || demoMode) {
   @@include("partials/topnav.html", {
   "category": "pages",
-  "subcategory": "project",
-  "page": "index.html"
+  "subcategory": "",
+  "page": "tv.html"
   })
   }
 
@@ -49,20 +49,12 @@
     @@include("partials/topbar.html")
     }
 
-    <!-- HEADER Updated d181 Chai Forest 4:20pm -->
+    <!-- HEADER -->
     <div class="header">
 
-      <!-- AIRCRFT cover splash Image Updated d186 10:49pm by Chai Forest 10:45am -->
-      <!-- <img src="assets/img/covers/aircrft-index-super-clean-d186.png" class="header-img-top" alt="aircrft-index-super-clean-d186"> 
-      <!-- img src="assets/img/covers/aircrft-is-aws-for-early-stage-startups.png" class="header-img-top" alt="aircrft-is-aws-for-early-stage-startups.png"> -->
-      <!-- <img src="assets/img/covers/aircrft-startups-helping-startups-skinny.png" class="header-img-top" alt="aircrft-startups-helping-startups-skinny"> -->
-      <!-- <img src="assets/img/covers/aircrft-startups-helping-startups-skinny.png" class="header-img-top" alt="aircrft-exponential-innovation-platform-double-skinny-rainbow.png"> 
-      <img src="assets/img/covers/aircrft-exponential-innovation-platform-double-skinny-rainbow.png" class="header-img-top" alt="aircrft-exponential-innovation-platform-double-skinny-rainbow"> 
-      <img src="assets/img/covers/aircrft-open-source-startup-builder.png" class="header-img-top" alt="aircrft-open-source-startup-builder"> 
-      <img src="assets/img/covers/aircrft-be-the-ceo-of-you.png" class="header-img-top" alt="aircrft-be-the-ceo-of-you"> 
-      <img src="assets/img/covers/aircrft-startup-market-network-cover.png" class="header-img-top" alt="aircrft-startup-market-network-cover.png"> -->
-      <img src="assets/img/covers/aircrft-e-i-h-cover-d181.png" class="header-img-top" alt="aircrft-exponetial-innovation-hub"> 
-      
+      <!-- Image Cover updated d184 1:15pm Chai Forest -->
+      <img src="assets/img/covers/tv-drk-blue-bg-d184.png" class="header-img-top" alt="tv-drk-blue-bg-d184">
+
       <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
 
         <!-- Body -->
@@ -72,7 +64,7 @@
 
               <!-- Avatar -->
               <div class="avatar avatar-xxl header-avatar-top">
-                <img src="assets/img/AIRCRFT-logo-index-v2.jpeg" alt="aircrft-logo"
+                <img src="assets/img/avatars/icons/tv-icon.jpg" alt="AIRCRFT FOUNDER TV"
                   class="avatar-img rounded-circle border border-4 border-body">
               </div>
 
@@ -81,45 +73,14 @@
 
               <!-- Pretitle -->
               <h6 class="header-pretitle">
-                STARTUPS UPLIFTING STARTUPS
+                LIVE FEED | VIDEO MEMOS | WEEKLY UPDATES
               </h6> 
-              
-              <!-- Pretitle 
-              <h6 class="header-pretitle">
-                STARTUPS HELPING STARTUPS
-              </h6> -->
-              
-              <!-- Pretitle 
-              <h6 class="header-pretitle">
-                Startups helping startups
-              </h6> -->
 
-              <!-- Title 
-              <h1 class="header-title">
-                10^9+ Positive Impact Startups
-              </h1> -->
-              
-               <!-- Title 
-              <h1 class="header-title">
-                10^9+ Startup exponential innovation HUb
-              </h1> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                Startup HUB | Platform | Marketplace
-              </h1> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                Open source startup builder
-              </h1> -->
-              
               <!-- Title -->
               <h1 class="header-title">
-                Rising together
-              </h1> 
-              
-              
+                FounderTV
+              </h1>
+
             </div>
             <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
 
@@ -139,29 +100,9 @@
                 </a> -->
                 
               <!-- Button 
-                <a href="https://aircrft.com" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
-                  Deploy AIRCRFT
+                <a href="https://aircrft.com/iframe-ghost-start-engine.html" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
+                  Join AIRCRFT
                 </a> -->
-                
-              <!-- Button 
-                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> deploy your aircrft
-                </a> -->
-                
-              <!-- Button 
-                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> deploy startup builder
-                </a> -->
-                
-              <!-- Button 
-                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> Deploy aircrft startup builder
-                </a> -->
-                
-              <!-- Sidebar Menu Trigger Modal Button d184 -->
-                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i>AIRCRFT
-                </a> 
                 
               <!-- Button 
               @@if (demoMode) {
@@ -169,6 +110,11 @@
                 <i class="fe fe-sliders mr-2"></i> Join
               </a>
               } -->
+              
+              <!-- Button -->
+              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> launch your aircrft
+              </a>
 
               <!-- All-access Pass 5.7.2020 Button 
               <a href="#modalAllAccessPass1" class="btn btn-primary d-block d-md-inline-block lift">
@@ -221,7 +167,50 @@
       <div class="row justify-content-center">
         <div class="col-12 col-xl-8">
         
-          <!-- AIRCFT Platform Post d172 -->
+          <!-- AIRCFT Platform Post Monday 6.17.2020 d196 AIRCRFT Startup HUB Chai Forest 2:41pm -->
+          <div class="card">
+            <div class="card-body">
+              
+              <!-- Header -->
+              <div class="mb-3">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                   
+                    <!-- Avatar -->
+                    <a href="#" class="avatar">
+                      <img src="assets/img/avatars/icons/tv-icon.jpg" alt="AIRCRFT Founder TV" class="avatar-img rounded-circle">
+                    </a>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Title -->
+                    <h4 class="card-title mb-1">
+                      AIRCRFT 
+                    </h4>
+                              <!-- Time -->
+                    <p class="card-text small text-muted">Pilot
+                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">07 mins ago
+                        | Day 198</time>
+                    </p>
+
+                  </div>
+                  <div class="col-auto">
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+                  
+              <!-- Image -->
+              <p class="text-center mb-3">
+                <img src="assets/img/posts/AIRCRFT Startup HUB.png" alt="AIRCRFT Startup HUB"
+                  class="img-fluid rounded">
+              </p>
+              
+            </div>
+         </div>
+         
+                   <!-- AIRCFT Platform Post Monday 6.16.2020 d198 AIRCRFT Startup Platform Chai Forest 5:35pm -->
           <div class="card">
             <div class="card-body">
               
@@ -244,8 +233,8 @@
                     </h4>
                               <!-- Time -->
                     <p class="card-text small text-muted">Pilot
-                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">33 mins ago
-                        | Day 172</time>
+                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">07 mins ago
+                        | Day 198</time>
                     </p>
 
                   </div>
@@ -257,33 +246,12 @@
                   
               <!-- Image -->
               <p class="text-center mb-3">
-                <img src="assets/img/posts/aircrft-be-the-ceo-of-you-uplift-algorithm-d181.png" alt="aircrft-be-the-ceo-of-you-uplift-algorithm"
+                <img src="assets/img/posts/AIRCRFT Exponential Platform.png" alt="AIRCRFT Exponential Platform"
                   class="img-fluid rounded">
               </p>
               
             </div>
          </div>
-         
-         <!-- AIRCRFT iframe tv.aircrft.com d172 -->
-          <div class="card">
-            <div class="card-body">
-              
-           <div class="embed-responsive embed-responsive-1by1">
-                <iframe class="embed-responsive-item" src="https://tv.aircrft.com" allowfullscreen></iframe>
-              </div>
-              
-            </div>
-         </div>
-         
-         <!-- CONTENT -->
-          <div class="row">
-            <div class="col-12">
-
-              <div class="embed-responsive embed-responsive-1by1">
-                <iframe class="embed-responsive-item" src="https://tv.aircrft.com" allowfullscreen></iframe>
-              </div>
-  
-            </div>   
 
         </div>
       </div>
